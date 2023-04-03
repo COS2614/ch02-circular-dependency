@@ -1,9 +1,11 @@
-#include <iostream>
+#include "a.h"
+#include "b.h"
 
-using namespace std;
+int main() {
+    ClassA a;
+    ClassB b;
 
-int main()
-{
-    cout << "Hello World!" << endl;
+    a.doSomething(b);
+
     return 0;
 }
