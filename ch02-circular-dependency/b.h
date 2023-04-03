@@ -2,7 +2,8 @@
 #define CLASSB_H
 
 #include <iostream>
-#include "a.h"
+//#include "a.h"    // causes circular dependency
+class ClassA;    // resolve circular dependency using forward declaration
 
 class ClassB {
 public:
